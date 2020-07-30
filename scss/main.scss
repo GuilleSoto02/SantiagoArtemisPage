@@ -1,0 +1,229 @@
+$color-principal:#A22522;
+$color-subtitulo:#CA2D2B;
+$tipografia-titulos:'Cinzel Decorative', cursive;
+$tamano-tipografia:2rem;
+$centrado:center;
+$tamano-titulos:3rem;
+$borde-redondeado:3px;
+
+
+@mixin principal($colorPrimario, $tamano, $alineacion) {
+    color: $colorPrimario;
+    font-size: $tamano;
+    text-align: $alineacion;
+}
+
+
+html{
+    *{
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    font-size: 62.5%;
+    body{
+        font-family: 'Scada', sans-serif;
+        font-size:2rem;
+        background-image:linear-gradient(to top, #cfcfcf,    #a29b9b   );
+        header{
+            .tituloPrincipal{
+                @include principal($color-principal, 5rem,center);
+                font-family:$tipografia-titulos; 
+                a{
+                    text-decoration: none;
+                    color: $color-principal;
+                }
+            }
+            .subtituloPrincipal{
+                @include principal($color-subtitulo, 4rem, center);
+                font-family:$tipografia-titulos;
+            }
+        }
+        nav{
+            .navegacion{
+                width: 100%;
+                margin: 30px auto;
+                background-color: $color-principal;
+                border-radius:$borde-redondeado;
+            }
+            .menu{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        font-size: $tamano-tipografia;
+                        padding: 20px;
+                        color: #F7DEDF;
+                    }
+                }
+                li:hover{
+                    background-color: $color-principal;
+                    border-radius: $borde-redondeado;
+                }
+            }
+        }
+        section{
+            .tituloIframe{
+                @include principal($color-principal, 2.5rem, center);
+                font-family: $tipografia-titulos;
+            }
+        }
+        div{
+            .fraseArtista{
+                width: 100%;
+                height: 110px;
+                text-align: $centrado;
+                padding: 45px;
+                font-family: 'Fondamento', cursive;
+                margin-bottom: 10px;
+                background-image: linear-gradient(to top,#A22522, #CA2D2B );
+            }
+            .caja1{
+                font-size: 2rem;
+                padding: 100px;
+                text-align: center;
+            }
+        }
+        footer{
+            width: 100%;
+            margin: 30px auto;
+            background-color: $color-principal;
+            border-radius:$borde-redondeado;
+            .redes{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    float: right;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        font-size: 2rem;
+                        padding: 20px;
+                        color: #858585;
+                    }
+                }
+            }
+            li:hover{
+                background-color: $color-principal;
+                border-radius: $borde-redondeado;
+            }
+        }
+        @media (min-width:1024px){
+            iframe{
+                width: 500px;
+                height: 300px;
+                margin-bottom: 3px;
+            }
+        }
+        div{
+            div{
+                .tituloBiografia{
+                    @include principal($color-principal, 3rem, center);
+                    font-family: $tipografia-titulos;
+                }
+            }
+
+            .cajasBiografia{
+                @include principal(#4d4141, 2rem, left);
+                height: auto;
+                border-radius: $borde-redondeado;
+                overflow:none;
+                margin-left: 0px;
+                margin-bottom: 20px;
+            }
+            .listaVestidas{
+                text-align: $centrado;
+                color:  $color-principal;
+                list-style-type: none; 
+            }
+            .listaViajes{
+                text-align: center;
+                color: $color-principal  ;
+                list-style-type: none; 
+            }
+            .listas{
+                color: $color-principal  ;
+                list-style-type: none; 
+            }
+            .imagen{
+                transform: rotateZ(10deg);
+                padding-top: 40px;
+            }
+            
+        }
+        section{
+            div{
+                 .tituloSeccion{
+                    @include principal($color-principal, $tamano-titulos, center);
+                    font-family: $tipografia-titulos;
+                  }
+            }
+        }
+        section{
+                div{
+                    .tituloSeccion{
+                        @include principal($color-principal, $tamano-titulos,  center);
+                        font-family: $tipografia-titulos;
+                    }
+                }            
+        }
+
+            .Revista{
+                font-family: $tipografia-titulos;
+                @include principal(#A72727, 4rem, center);
+            }
+            
+            .tituloArticulo{
+                @include principal(#C62F2F, 4rem, center);
+            }
+            
+            .autor{
+                color: #4d4141;
+                text-align: left;
+            }
+            
+            .parteArticulo{
+                @include principal(#421012, 2.5rem, center);
+            } 
+            div{
+                div{
+                    .tituloFormulario{
+                        @include principal($color-principal, $tamano-titulos, center);
+                        font-family: $tipografia-titulos;
+                    }
+                }
+            }
+            div{
+                div{
+                    .formulario{
+                        font-size: 3rem;
+                        background-color:$color-principal;
+                        border: 10px double #EFBDC2;
+                        margin: 60px; 
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+             form{
+                select{
+                    color: #902326;
+                }
+                
+                input{
+                    color: #902326;
+                }
+                
+                label{
+                    color: #F7DEDF;
+                }
+                
+                .fraseacepta{
+                    color: #F7DEDF;
+                }
+    
+             }
+        }
+}

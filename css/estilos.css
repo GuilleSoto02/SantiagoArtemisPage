@@ -1,0 +1,155 @@
+html {
+  font-size: 62.5%; }
+  html * {
+    border: 0px;
+    padding: 0px;
+    margin: 0px; }
+  html body {
+    font-family: 'Scada', sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to top, #cfcfcf, #a29b9b); }
+    html body header .tituloPrincipal {
+      color: #A22522;
+      font-size: 5rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+      html body header .tituloPrincipal a {
+        text-decoration: none;
+        color: #A22522; }
+    html body header .subtituloPrincipal {
+      color: #CA2D2B;
+      font-size: 4rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body nav .navegacion {
+      width: 100%;
+      margin: 30px auto;
+      background-color: #A22522;
+      border-radius: 3px; }
+    html body nav .menu {
+      list-style: none; }
+      html body nav .menu li {
+        display: inline-block; }
+        html body nav .menu li a {
+          display: block;
+          text-decoration: none;
+          font-size: 2rem;
+          padding: 20px;
+          color: #F7DEDF; }
+      html body nav .menu li:hover {
+        background-color: #A22522;
+        border-radius: 3px; }
+    html body section .tituloIframe {
+      color: #A22522;
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body div .fraseArtista {
+      width: 100%;
+      height: 110px;
+      text-align: center;
+      padding: 45px;
+      font-family: 'Fondamento', cursive;
+      margin-bottom: 10px;
+      background-image: linear-gradient(to top, #A22522, #CA2D2B); }
+    html body div .caja1 {
+      font-size: 2rem;
+      padding: 100px;
+      text-align: center; }
+    html body footer {
+      width: 100%;
+      margin: 30px auto;
+      background-color: #A22522;
+      border-radius: 3px; }
+      html body footer .redes {
+        list-style: none; }
+        html body footer .redes li {
+          display: inline-block;
+          float: right; }
+          html body footer .redes li a {
+            display: block;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 20px;
+            color: #858585; }
+      html body footer li:hover {
+        background-color: #A22522;
+        border-radius: 3px; }
+    @media (min-width: 1024px) {
+      html body iframe {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 3px; } }
+    html body div div .tituloBiografia {
+      color: #A22522;
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body div .cajasBiografia {
+      color: #4d4141;
+      font-size: 2rem;
+      text-align: left;
+      height: auto;
+      border-radius: 3px;
+      overflow: none;
+      margin-left: 0px;
+      margin-bottom: 20px; }
+    html body div .listaVestidas {
+      text-align: center;
+      color: #A22522;
+      list-style-type: none; }
+    html body div .listaViajes {
+      text-align: center;
+      color: #A22522;
+      list-style-type: none; }
+    html body div .listas {
+      color: #A22522;
+      list-style-type: none; }
+    html body div .imagen {
+      transform: rotateZ(10deg);
+      padding-top: 40px; }
+    html body section div .tituloSeccion {
+      color: #A22522;
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body section div .tituloSeccion {
+      color: #A22522;
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body .Revista {
+      font-family: "Cinzel Decorative", cursive;
+      color: #A72727;
+      font-size: 4rem;
+      text-align: center; }
+    html body .tituloArticulo {
+      color: #C62F2F;
+      font-size: 4rem;
+      text-align: center; }
+    html body .autor {
+      color: #4d4141;
+      text-align: left; }
+    html body .parteArticulo {
+      color: #421012;
+      font-size: 2.5rem;
+      text-align: center; }
+    html body div div .tituloFormulario {
+      color: #A22522;
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Cinzel Decorative", cursive; }
+    html body div div .formulario {
+      font-size: 3rem;
+      background-color: #A22522;
+      border: 10px double #EFBDC2;
+      margin: 60px;
+      border-radius: 10px; }
+    html body form select {
+      color: #902326; }
+    html body form input {
+      color: #902326; }
+    html body form label {
+      color: #F7DEDF; }
+    html body form .fraseacepta {
+      color: #F7DEDF; }
