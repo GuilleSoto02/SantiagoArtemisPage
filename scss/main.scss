@@ -25,49 +25,59 @@ html{
         font-family: 'Scada', sans-serif;
         font-size:2rem;
         background-image:linear-gradient(to top, #cfcfcf,    #a29b9b   );
-        header{
-            .tituloPrincipal{
-                @include principal($color-principal, 5rem,center);
-                font-family:$tipografia-titulos; 
-                a{
-                    text-decoration: none;
-                    color: $color-principal;
-                }
-            }
-            .subtituloPrincipal{
-                @include principal($color-subtitulo, 4rem, center);
-                font-family:$tipografia-titulos;
-            }
-        }
-        nav{
-            .navegacion{
-                width: 100%;
-                margin: 30px auto;
-                background-color: $color-principal;
-                border-radius:$borde-redondeado;
-            }
-            .menu{
-                list-style: none;
-                li{
-                    display: inline-block;
+        div{
+            header{
+                .tituloPrincipal{
+                    @include principal($color-principal, 5rem,center);
+                    font-family:$tipografia-titulos; 
+                    margin-left: 80px;
+                    margin-top: 10px;
+                 
+                    border-radius: $borde-redondeado;
                     a{
-                        display: block;
                         text-decoration: none;
-                        font-size: $tamano-tipografia;
-                        padding: 20px;
-                        color: #F7DEDF;
+                        color:$color-principal;
                     }
                 }
-                li:hover{
+                .subtituloPrincipal{
+                    @include principal($color-subtitulo, 2rem, center);
+                    font-family:$tipografia-titulos;
+                }
+            }
+            nav{
+                .navegacion{
                     background-color: $color-principal;
+                    border-radius:$borde-redondeado;
+                }
+                .menu{
+                    list-style: none;
+                    background-color: $color-principal;
+                    margin-top: 40px;
                     border-radius: $borde-redondeado;
+                    padding: 20px;
+                    width: auto;
+                    li{
+                        display: inline-block;
+                        a{
+                            text-decoration: none;
+                            font-size: $tamano-tipografia;
+                            padding: 20px;
+                            color: #F7DEDF;
+                        }
+                    }
+                    li:hover{
+                        background-color: #858585 ;
+                        border-radius: $borde-redondeado;
+                    }
                 }
             }
         }
+
         section{
             .tituloIframe{
                 @include principal($color-principal, 2.5rem, center);
                 font-family: $tipografia-titulos;
+                margin-top: 60px;
             }
         }
         div{
@@ -76,6 +86,7 @@ html{
                 height: 110px;
                 text-align: $centrado;
                 padding: 45px;
+                margin-top: 10px;
                 font-family: 'Fondamento', cursive;
                 margin-bottom: 10px;
                 background-image: linear-gradient(to top,#A22522, #CA2D2B );
@@ -115,6 +126,7 @@ html{
                 width: 500px;
                 height: 300px;
                 margin-bottom: 3px;
+                margin-top: 40px;
             }
         }
         div{
@@ -133,6 +145,14 @@ html{
                 margin-left: 0px;
                 margin-bottom: 20px;
             }
+            .cajasBiografia1{
+                @extend .cajasBiografia;
+                margin-top: 40px;
+            }
+            .cajasBiografia2{
+                @extend .cajasBiografia;
+                margin-top: 100px;
+            }
             .listaVestidas{
                 text-align: $centrado;
                 color:  $color-principal;
@@ -148,8 +168,7 @@ html{
                 list-style-type: none; 
             }
             .imagen{
-                transform: rotateZ(10deg);
-                padding-top: 40px;
+                
             }
             
         }
@@ -186,6 +205,13 @@ html{
             
             .parteArticulo{
                 @include principal(#421012, 2.5rem, center);
+                a{
+                    text-decoration: none;
+                    color: $color-principal;
+                }
+                a:hover{
+                    animation: shakeY;
+                }
             } 
             div{
                 div{
