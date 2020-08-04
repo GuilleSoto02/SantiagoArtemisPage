@@ -26,19 +26,15 @@ html{
         font-size:2rem;
         background-image:linear-gradient(to top, #cfcfcf,    #a29b9b   );
         div{
-            header{
-                .tituloPrincipal{
-                    @include principal($color-principal, 5rem,center);
-                    font-family:$tipografia-titulos; 
-                    margin-left: 80px;
-                    margin-top: 10px;
-                 
-                    border-radius: $borde-redondeado;
-                    a{
-                        text-decoration: none;
-                        color:$color-principal;
-                    }
+            div{
+                header{
+                        img{
+                            width: 70%;
+                            height: 200px;
+                            margin-left: 100px;
+                        } 
                 }
+            }
                 .subtituloPrincipal{
                     @include principal($color-subtitulo, 2rem, center);
                     font-family:$tipografia-titulos;
@@ -251,5 +247,5 @@ html{
                 }
     
              }
-        }
+        
 }
