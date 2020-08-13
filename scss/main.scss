@@ -14,6 +14,8 @@ $borde-redondeado:3px;
 }
 
 
+
+
 html{
     *{
         border: 0px;
@@ -26,27 +28,6 @@ html{
         font-size:2rem;
         background-image:linear-gradient(to top, #cfcfcf,    #a29b9b   );
         div{
-            div{
-                header{
-                        img{
-                            margin-left: 100px;
-
-                        } 
-                }
-            }
-            @media (min-width:740px){
-               div{
-                div{
-                    div{
-                        header{
-                            img{
-                                width: auto;
-                            }
-                        }
-                    }
-                }
-            } 
-               }
                 .subtituloPrincipal{
                     @include principal($color-subtitulo, 2rem, center);
                     font-family:$tipografia-titulos;
@@ -62,14 +43,14 @@ html{
                     background-color: $color-principal;
                     margin-top: 40px;
                     border-radius: $borde-redondeado;
-                    padding: 20px;
+                    padding: 10px;
                     width: auto;
                     li{
                         display: inline-block;
                         a{
                             text-decoration: none;
-                            font-size: $tamano-tipografia;
-                            padding: 20px;
+                            font-size: 1.5rem;
+                            padding: 10px;
                             color: #F7DEDF;
                         }
                     }
@@ -79,6 +60,7 @@ html{
                     }
                 }
             }
+
         }
 
         section{
@@ -93,13 +75,13 @@ html{
                 width: 100%;
                 height: 110px;
                 text-align: $centrado;
-                padding: 45px;
-                margin-top: 10px;
+                padding: 30px;
+                margin-top: 5px;
                 font-family: 'Fondamento', cursive;
                 margin-bottom: 10px;
                 background-image: linear-gradient(to top,#A22522, #CA2D2B );
                 border-radius: $borde-redondeado;
-                font-size: 3rem;
+                font-size: 2rem;
             }
         section{
             div{
@@ -116,7 +98,7 @@ html{
 
             .caja1{
                 font-size: 2rem;
-                padding: 100px;
+                padding: 10px;
                 text-align: center;
             }
         }
@@ -127,7 +109,7 @@ html{
                 list-style: none;
                 li{
                     display: inline-block;
-                    
+                    margin-left: 30px;
                     a{
                         display: block;
                         text-decoration: none;
@@ -140,6 +122,9 @@ html{
                         }
                     }
                 }
+            }
+            .parrafofooter{
+                margin-left: 20px;
             }
             li:hover{
                 background-color: $color-principal;
@@ -181,7 +166,131 @@ html{
                 margin-left: 512px;
             }
             }
-        }
+            div{
+                div{
+                    header{
+                            img{
+                                margin-left: 100px;
+    
+                            } 
+                    }
+                }
+            }
+            section{
+                .caja1{
+                    font-size: 2rem;
+                    padding: 100px;
+                    text-align: center;
+                }
+            }
+            div{
+                .fraseArtista{
+                    width: 100%;
+                    height: 110px;
+                    text-align: $centrado;
+                    padding: 45px;
+                    margin-top: 10px;
+                    font-family: 'Fondamento', cursive;
+                    margin-bottom: 10px;
+                    background-image: linear-gradient(to top,#A22522, #CA2D2B );
+                    border-radius: $borde-redondeado;
+                    font-size: 3rem;
+                }
+            }
+            div{
+                nav{
+                    .navegacion{
+                        background-color: $color-principal;
+                        border-radius:$borde-redondeado;
+                    }
+                    .menu{
+                        list-style: none;
+                        background-color: $color-principal;
+                        margin-top: 40px;
+                        border-radius: $borde-redondeado;
+                        padding: 20px;
+                        width: auto;
+                        li{
+                            display: inline-block;
+                            a{
+                                text-decoration: none;
+                                font-size: $tamano-tipografia;
+                                padding: 20px;
+                                color: #F7DEDF;
+                            }
+                        }
+                        li:hover{
+                            background-color: #858585 ;
+                            border-radius: $borde-redondeado;
+                        }
+                    }
+                }
+            }
+            div{
+                div{
+                    div{
+                        section{
+                                    .imagen{
+                                        margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            section{
+                div{
+                    div{
+                        .tituloBiografia{
+                            @include principal($color-principal, 3rem, center);
+                            font-family: $tipografia-titulos;
+                        }
+                    }
+        
+
+                    .cajasBiografia1{
+                        @include principal(#4d4141, 2rem, left);
+                        height: auto;
+                        border-radius: $borde-redondeado;
+                        overflow:none;
+                        margin-left: 0px;
+                        margin-bottom: 20px;
+                        margin-top: 60px;
+                        margin-bottom: 40px;
+                        background-color: #d2cccc;
+                        box-shadow:5px 5px 5px 5px $color-principal;
+                    }
+                    .cajasBiografia2{
+                        @include principal(#4d4141, 2rem, left);
+                        height: auto;
+                        border-radius: $borde-redondeado;
+                        overflow:none;
+                        margin-left: 0px;
+                        margin-bottom: 20px;
+                        margin-top: 100px;
+                        background-color: #d2cccc  ;
+                        box-shadow:5px 5px 5px 5px $color-principal;
+                    }
+                    .listaVestidas{
+                        text-align: $centrado;
+                        color:  $color-principal;
+                        list-style-type: none; 
+                    }
+                    .listaViajes{
+                        text-align: center;
+                        color: $color-principal  ;
+                        list-style-type: none; 
+                    }
+                    .listas{
+                        color: $color-principal  ;
+                        list-style-type: none; 
+                    }
+                    .imagen{
+                        margin-bottom: 10px;
+                    }
+                    
+                } 
+            }
+
         }
         div{
             div{
@@ -191,26 +300,27 @@ html{
                 }
             }
 
-            .cajasBiografia{
+            .cajasBiografia1{
                 @include principal(#4d4141, 2rem, left);
                 height: auto;
                 border-radius: $borde-redondeado;
                 overflow:none;
-                margin-left: 0px;
-                margin-bottom: 20px;
-            }
-            .cajasBiografia1{
-                @extend .cajasBiografia;
-                margin-top: 60px;
-                margin-bottom: 40px;
+                margin-left: 10px;
+                margin-bottom: 10px;
                 background-color: #d2cccc;
                 box-shadow:5px 5px 5px 5px $color-principal;
             }
             .cajasBiografia2{
-                @extend .cajasBiografia;
-                margin-top: 100px;
+                @include principal(#4d4141, 2rem, left);
+                height: auto;
+                border-radius: $borde-redondeado;
+                overflow:none;
+                margin-bottom: 10px;
+                margin-left: 10px;
                 background-color: #d2cccc  ;
                 box-shadow:5px 5px 5px 5px $color-principal;
+
+
             }
             .listaVestidas{
                 text-align: $centrado;
@@ -227,7 +337,7 @@ html{
                 list-style-type: none; 
             }
             .imagen{
-                
+                margin-bottom: 10px;
             }
             
         }
@@ -301,10 +411,13 @@ html{
                                color: #902326;
                                border-radius: $borde-redondeado;
                                background-color:  #d2cccc ;
+                               margin-bottom: 10px;
+
                            }
                            
                            label{
                                color: #F7DEDF;
+                               text-align: center;
                                
                            }
                            option{
@@ -317,6 +430,10 @@ html{
                     
                     }    }
                 }
+                iframe{
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+
             }
-
-
+    }
