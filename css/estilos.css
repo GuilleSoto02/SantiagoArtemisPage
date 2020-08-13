@@ -63,20 +63,20 @@ html {
     text-align: center; }
   html footer {
     width: 100%;
-    margin: 30px auto;
-    background-color: #A22522;
-    border-radius: 3px; }
+    margin: 30px auto; }
     html footer .redes {
       list-style: none; }
       html footer .redes li {
-        display: inline-block;
-        float: right; }
+        display: inline-block; }
         html footer .redes li a {
           display: block;
           text-decoration: none;
           font-size: 2rem;
-          padding: 20px;
+          margin: 20px;
           color: #858585; }
+          html footer .redes li a img {
+            width: 20px;
+            height: 20px; }
     html footer li:hover {
       background-color: #A22522;
       border-radius: 3px; }
@@ -85,92 +85,132 @@ html {
       width: 500px;
       height: 300px;
       margin-bottom: 3px;
-      margin-top: 20px; } }
-  html div div .tituloBiografia {
-    color: #A22522;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Cinzel Decorative", cursive; }
-  html div .cajasBiografia, html div .cajasBiografia1, html div .cajasBiografia2 {
-    color: #4d4141;
-    font-size: 2rem;
-    text-align: left;
-    height: auto;
-    border-radius: 3px;
-    overflow: none;
-    margin-left: 0px;
-    margin-bottom: 20px; }
-  html div .cajasBiografia1 {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    background-color: #d2cccc;
-    box-shadow: 5px 5px 5px 5px #A22522; }
-  html div .cajasBiografia2 {
-    margin-top: 100px;
-    background-color: #d2cccc;
-    box-shadow: 5px 5px 5px 5px #A22522; }
-  html div .listaVestidas {
-    text-align: center;
-    color: #A22522;
-    list-style-type: none; }
-  html div .listaViajes {
-    text-align: center;
-    color: #A22522;
-    list-style-type: none; }
-  html div .listas {
-    color: #A22522;
-    list-style-type: none; }
-  html section div .tituloSeccion {
-    color: #A22522;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Cinzel Decorative", cursive; }
-  html section div .tituloSeccion {
-    color: #A22522;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Cinzel Decorative", cursive; }
-  html .Revista {
-    font-family: "Cinzel Decorative", cursive;
-    color: #A72727;
-    font-size: 4rem;
-    text-align: center; }
-  html .tituloArticulo {
-    color: #C62F2F;
-    font-size: 4rem;
-    text-align: center; }
-  html .autor {
-    color: #4d4141;
-    text-align: left; }
-  html .parteArticulo {
-    color: #421012;
-    font-size: 2.5rem;
-    text-align: center; }
-    html .parteArticulo a {
-      text-decoration: none;
-      color: #A22522; }
-    html .parteArticulo a:hover {
-      animation: shakeY; }
-  html div div .tituloFormulario {
-    color: #A22522;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Cinzel Decorative", cursive; }
-  html div div div .formulario {
-    font-size: 2.5rem;
-    background-color: #A22522;
-    border: 10px #EFBDC2;
-    margin: 60px;
-    border-radius: 3px; }
-  html div div div form select {
-    color: #902326; }
-  html div div div form input {
-    color: #902326;
-    border-radius: 3px;
-    background-color: #d2cccc; }
-  html div div div form label {
-    color: #F7DEDF; }
-  html div div div form option {
-    background-color: #d2cccc; }
-  html div div div form .fraseacepta {
-    color: #F7DEDF; }
+      margin-top: 20px; }
+    html .carrusel {
+      margin-left: 160px; }
+    html footer {
+      width: 100%;
+      margin: 30px auto; }
+      html footer .redes {
+        list-style: none; }
+        html footer .redes li {
+          display: inline-block;
+          margin-left: 280px; }
+          html footer .redes li a {
+            display: block;
+            text-decoration: none;
+            font-size: 2rem;
+            color: #858585; }
+            html footer .redes li a img {
+              width: 30px;
+              height: 30px; }
+      html footer .parrafofooter {
+        margin-left: 512px; } }
+
+div div .tituloBiografia {
+  color: #A22522;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive; }
+
+div .cajasBiografia, div .cajasBiografia1, div .cajasBiografia2 {
+  color: #4d4141;
+  font-size: 2rem;
+  text-align: left;
+  height: auto;
+  border-radius: 3px;
+  overflow: none;
+  margin-left: 0px;
+  margin-bottom: 20px; }
+
+div .cajasBiografia1 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  background-color: #d2cccc;
+  box-shadow: 5px 5px 5px 5px #A22522; }
+
+div .cajasBiografia2 {
+  margin-top: 100px;
+  background-color: #d2cccc;
+  box-shadow: 5px 5px 5px 5px #A22522; }
+
+div .listaVestidas {
+  text-align: center;
+  color: #A22522;
+  list-style-type: none; }
+
+div .listaViajes {
+  text-align: center;
+  color: #A22522;
+  list-style-type: none; }
+
+div .listas {
+  color: #A22522;
+  list-style-type: none; }
+
+section div .tituloSeccion {
+  color: #A22522;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive; }
+
+section div .tituloSeccion {
+  color: #A22522;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive; }
+
+.Revista {
+  font-family: "Cinzel Decorative", cursive;
+  color: #A72727;
+  font-size: 4rem;
+  text-align: center; }
+
+.tituloArticulo {
+  color: #C62F2F;
+  font-size: 4rem;
+  text-align: center; }
+
+.autor {
+  color: #4d4141;
+  text-align: left; }
+
+.parteArticulo {
+  color: #421012;
+  font-size: 2.5rem;
+  text-align: center; }
+  .parteArticulo a {
+    text-decoration: none;
+    color: #A22522; }
+  .parteArticulo a:hover {
+    animation: shakeY; }
+
+div div .tituloFormulario {
+  color: #A22522;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive; }
+
+div div div .formulario {
+  font-size: 2.5rem;
+  background-color: #A22522;
+  border: 10px #EFBDC2;
+  margin: 60px;
+  border-radius: 3px; }
+
+div div div form select {
+  color: #902326; }
+
+div div div form input {
+  color: #902326;
+  border-radius: 3px;
+  background-color: #d2cccc; }
+
+div div div form label {
+  color: #F7DEDF; }
+
+div div div form option {
+  background-color: #d2cccc; }
+
+div div div form .fraseacepta {
+  color: #F7DEDF; }
